@@ -4,7 +4,7 @@ module.exports = function ExitCommand(dispatch) {
     const command = Command(dispatch);
     
     command.add(['exit', 'quit'], () => {
-        dispatch.toServer('C_EXIT', 1, {});
+        dispatch.toServer('C_EXIT', 3, {});
     });
 
 }
